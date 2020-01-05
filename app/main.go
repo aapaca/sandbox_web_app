@@ -17,6 +17,6 @@ func main() {
 	// ルーティング
 	e.GET("/aapaca", handler.MainPage())
 
-	// サーバー起動
-	e.Start(":1323")    //ポート番号指定してね
+	// サーバー起動	
+	e.Logger.Fatal(e.Start(":8080"))
 }
